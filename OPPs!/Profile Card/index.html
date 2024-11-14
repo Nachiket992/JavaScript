@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./Assest/styles.css">
+</head>
+
+<body id="body">
+    
+    <script>
+
+        class Employees {
+
+            constructor(person, personName, personPosition, hisOrHerPosts, hisOrHerFollowers, hisOrHerlikes) {
+                this.person = person;
+                this.personName = personName;
+                this.personPosition = personPosition;
+                this.hisOrHerPosts = hisOrHerPosts;
+                this.hisOrHerFollowers = hisOrHerFollowers;
+                this.hisOrHerlikes = hisOrHerlikes;
+            }
+
+        }
+
+        let employee = [
+
+            new Employees("../Assest/IMG/profile1.jpg", "Davis Miller", "Front-end Developer", "321", "2.4k", "36.7k"),
+            new Employees("../Assest/IMG/profile2.jpg", "Emma Evans", "Software Engineer", "493", "4.2k", "67.1k"),
+            new Employees("../Assest/IMG/profile3.jpg", "Lisa Wilson", "Art Director", "184", "1.3k", "25.9k")
+
+        ];
+
+        employee.forEach((value) => {
+
+            let body = document.getElementById('body');
+
+            let profile = document.createElement('div');
+            profile.className = "profileCard";
+
+            // Follow Profile Message
+
+            let profilePictuerAndEssential = document.createElement('div');
+            profilePictuerAndEssential.className = "follow_profile_message";
+
+            // Follow Button
+
+            let followButton = document.createElement('div');
+            let followButtonIcon = document.createElement('img');
+            followButtonIcon.src = "./Assest/ICONS/user-plus-solid-grey.svg"
+            let followButtonName = document.createElement('p');
+            followButtonName.textContent = "Follow";
+
+            // Profile Image
+
+            let profilePicture = document.createElement('div');
+            let profileImage = document.createElement('img');
+            profileImage.src = value.person;
+
+            // Message Button
+
+            let messageButton = document.createElement('div');
+            let messageButtonIcon = document.createElement('img');
+            messageButtonIcon.src = "./Assest/ICONS/comments-solid.svg"
+            let messageButtonName = document.createElement('p');
+            messageButtonName.textContent = "Follow";
+
+            // Position And Name
+
+            let positionName = document.createElement('div');
+            positionName.className = "name-position";
+            let name = document.createElement('h1');
+            name.textContent = value.personName;
+            let position = document.createElement('h1');
+            position.textContent = value.personPosition;
+
+            // Social Media Satates 
+
+            let socialMediaStatistics = document.createElement('div');
+            socialMediaStatistics.className = "socialMedia-States";
+
+            // Post
+
+            let post = document.createElement('div');
+            let postIcon = document.createElement('img');
+            postIcon.src = "./Assest/ICONS/clone-solid.svg"
+            let postFont = document.createElement('p');
+            postFont.textContent = "Post";
+            let postStates = document.createElement('p');
+            postStates.textContent = value.hisOrHerPosts;
+
+            // Follow
+
+            let followers = document.createElement('div');
+            let followersIcon = document.createElement('img')
+            followersIcon.src = "./Assest/ICONS/user-plus-solid-lightblue.svg"
+            let followersFont = document.createElement('p');
+            followersFont.textContent = "Follow";
+            let followersStates = document.createElement('p');
+            followersStates.textContent = value.hisOrHerFollowers;
+
+            // Like
+
+            let likes = document.createElement('div');
+            let likesIcon = document.createElement('img');
+            likesIcon.src = "./Assest/ICONS/heart-solid.svg"
+            let likesFont = document.createElement('p');
+            likesFont.textContent = "Like";
+            let likesStates = document.createElement('p');
+            likesStates.textContent = value.hisOrHerlikes;
+
+            // Social Media Accounts
+
+            let socialMediaAccounts = document.createElement('div');
+            socialMediaAccounts.className = "socialMedia-Accounts"
+
+            let facebookAccount = document.createElement('img');
+            facebookAccount.src = "./Assest/ICONS/facebook-f-brands-solid.svg";
+
+            let twitterAccount = document.createElement('img');
+            twitterAccount.src = "./Assest/ICONS/twitter-brands-solid.svg";
+
+            let githubAccount = document.createElement('img');
+            githubAccount.src = "./Assest/ICONS/github-brands-solid.svg";
+
+            let codepenAccount = document.createElement('img');
+            codepenAccount.src = "./Assest/ICONS/codepen-brands-solid.svg";
+
+            let behanceAccount = document.createElement('img');
+            behanceAccount.src = "./Assest/ICONS/behance-brands-solid.svg";
+
+            //////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            body.appendChild(profile);
+
+            // Follow Profile Message
+
+            profile.appendChild(profilePictuerAndEssential);
+
+            // Follow Button
+
+            profilePictuerAndEssential.appendChild(followButton);
+
+            followButton.appendChild(followButtonIcon);
+
+            followButton.appendChild(followButtonName);
+
+            // Profile Image
+
+            profilePictuerAndEssential.appendChild(profilePicture);
+
+            profilePicture.appendChild(profileImage);
+
+            // Message Button
+
+            profilePictuerAndEssential.appendChild(messageButton);
+
+            messageButton.appendChild(messageButtonIcon);
+
+            messageButton.appendChild(messageButtonName);
+
+            // Position And Name
+
+            profile.appendChild(positionName);
+
+            positionName.appendChild(name);
+
+            positionName.appendChild(position);
+
+            // Social Media Satates 
+
+            profile.appendChild(socialMediaStatistics);
+
+            // Post
+
+            socialMediaStatistics.appendChild(post);
+
+            post.appendChild(postIcon);
+
+            post.appendChild(postFont);
+
+            post.appendChild(postStates);
+
+            // Follow
+
+            socialMediaStatistics.appendChild(followers);
+
+            followers.appendChild(followersIcon);
+
+            followers.appendChild(followersFont);
+
+            followers.appendChild(followersStates);
+
+            // Like
+
+            socialMediaStatistics.appendChild(likes);
+
+            likes.appendChild(likesIcon);
+
+            likes.appendChild(likesFont);
+
+            likes.appendChild(likesStates);
+
+            // Social Media Accounts
+
+            profile.appendChild(socialMediaAccounts);
+
+            socialMediaAccounts.appendChild(facebookAccount);
+
+
+            socialMediaAccounts.appendChild(twitterAccount);
+
+
+            socialMediaAccounts.appendChild(githubAccount);
+
+
+            socialMediaAccounts.appendChild(codepenAccount);
+
+
+            socialMediaAccounts.appendChild(behanceAccount);
+
+        });
+
+    </script>
+
+</body>
+
+</html>
