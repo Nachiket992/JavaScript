@@ -1,0 +1,459 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../BackGround_img/BackGround.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 55px;
+    overflow: auto;
+}
+
+.weather {
+    height: 100%;
+    width: 480px;
+    min-width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(8px);
+    padding: 25px;
+    border-radius: 35px;
+}
+
+/* SEARCH//////////////////////////////////////////////////////////////// */
+
+.weather > div:nth-child(1) {
+    height: 48px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 25px;
+}
+
+.weather > div:nth-child(1) > input {
+    height: 100%;
+    width: 81.3953488372%;
+    display: flex;
+    align-items: center;
+    color: #000B58;
+    font-size: 1rem;
+    outline: none;
+    padding: 0 25px;
+    padding-top: 2px;
+    border: none;
+    border-radius: 25px;
+}
+
+::placeholder {
+    font-size: 1rem;
+}
+
+.weather > div:nth-child(1) > button {
+    height: 100%;
+    width: 48px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+}
+
+@media (max-width : 550px) {
+    .weather > div:nth-child(1) {
+        background-color: #fff;
+    }
+    
+}
+
+/* SEARCH//////////////////////////////////////////////////////////////// */
+
+
+
+/* LOCATION////////////////////////////////////////////////////////////// */
+
+.weather > div:nth-child(2) {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.weather > div:nth-child(2) > h1 {
+    color: white;
+    word-spacing: 3px;
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* LOCATION////////////////////////////////////////////////////////////// */
+
+
+
+/* WEATHER/////////////////////////////////////////////////////////////// */
+
+.weather > div:nth-child(3) {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.weather > div:nth-child(3) > p {
+    color: grey;
+    word-spacing: 6px;
+    letter-spacing: 6px;
+    font-size: 0.875rem;
+}
+
+
+/* WEATHER/////////////////////////////////////////////////////////////// */
+
+
+
+/* WEATHER SIGN////////////////////////////////////////////////////////// */
+
+.weather > div:nth-child(4) {
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+/* WEATHER SIGN////////////////////////////////////////////////////////// */
+
+
+
+/* TEMPRETURE//////////////////////////////////////////////////////////// */
+
+.weather > div:nth-child(5) {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    margin-top: 15px;
+    margin-left: -10px;
+}
+
+.weather > div:nth-child(5) > p {
+    color: #fff;
+    font-size: 4.6875rem;
+    margin: 0 20px;
+}
+
+.weather > div:nth-child(5)::before {
+    content: " ";
+    height: 15px;
+    width: 15px;
+    display: block;
+    position: absolute;
+    border: 3.8px solid white;
+    border-radius: 100%;
+}
+
+/* TEMPRETURE//////////////////////////////////////////////////////////// */
+
+
+
+/* MIN-MAX TEMPRETURE//////////////////////////////////////////////////// */
+
+.weather > div:nth-child(6) {
+    height: 55px;
+    width: 200px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.weather > div:nth-child(6)::before {
+    content: " ";
+    height: 55px;
+    width: 2px;
+    display: block;
+    position: absolute;
+    background-color: #fff;
+}
+
+.weather > div:nth-child(6) > div {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.weather > div:nth-child(6) div h1 {
+    height: auto;
+    width: auto;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.weather > div:nth-child(6) div div {
+    height: 20px;
+    width: 28px;
+    display: flex;
+    justify-content: end;
+    margin-left: -8px;
+}
+
+
+.weather > div:nth-child(6) div div::before {
+    content: " ";
+    height: 2px;
+    width: 2px;
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    border: 1px solid grey;
+}
+
+.weather > div:nth-child(6) div div p {
+    height: 18px;
+    width: 18px;
+    color: grey;
+    font-size: 1.125rem;
+    margin: auto;
+}
+
+/* MIN-MAX TEMPRETURE//////////////////////////////////////////////////// */
+
+
+
+/* MORE STATES/////////////////////////////////////////////////////////// */
+
+.weather > div:nth-child(7) {
+    height: 320px;
+    width: 100%;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+
+.weather > div:nth-child(7) > div:nth-child(1) {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+/* 1 */
+
+.weather > div:nth-child(7) > div:nth-child(1) > div:nth-child(1) {
+    height: 95px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 15px;
+}
+
+.weather > div:nth-child(7) > div:nth-child(1) > div:nth-child(1) > div {
+    height: 20px;
+    width: auto;
+    display: flex;
+}
+
+.weather > div:nth-child(7) > div:nth-child(1) > div:nth-child(1) > div img {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+
+.weather > div:nth-child(7) > div:nth-child(1) > div:nth-child(1) > div > p {
+    color: #4335A7;
+    letter-spacing: 0.3px;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+/* 1 */
+
+
+
+/* 2 */
+
+.weather > div:nth-child(7) > div:nth-child(1) > div:nth-child(2) {
+    height: 95px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 16px;
+}
+
+.weather > div:nth-child(7) > div:nth-child(1) > div:nth-child(2) > div{
+    height: 100%;
+    width: 46.5%;
+    background-color: #fff;
+    border-radius: 16px;
+}
+
+/* 2 */
+
+/* 3 */
+
+.weather > div:nth-child(7) > div:nth-child(1) > div:nth-child(3) {
+    height: 95px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 15px;
+}   
+
+.weather > div:nth-child(7) > div:nth-child(1) > div:nth-child(3) > div {
+    height: 20px;
+    width: auto;
+    display: flex;
+}
+
+.weather > div:nth-child(7) > div:nth-child(1) > div:nth-child(3) > div img {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+
+.weather > div:nth-child(7) > div:nth-child(1) > div:nth-child(3) > div > p {
+    color: #4335A7;
+    letter-spacing: 0.3px;
+    font-size: 1rem;
+    font-weight: bold;
+   
+}
+
+/* 3 */
+
+
+
+/* SECOND ROW//////////////////////////////////////////////////////////// */
+
+.weather > div:nth-child(7) > div:nth-child(2) {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* 1 */
+
+.weather > div:nth-child(7) > div:nth-child(2) > div:nth-child(1) {
+    height: 208px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 16px;
+    padding: 15px
+}
+
+.weather > div:nth-child(7) > div:nth-child(2) > div:nth-child(1) div {
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+.weather > div:nth-child(7) > div:nth-child(2) > div:nth-child(1) > div > img {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+
+.weather > div:nth-child(7) > div:nth-child(2) > div:nth-child(1) > div > p {
+    color: #4335A7;
+    letter-spacing: 0.3px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.weather > div:nth-child(7) > div:nth-child(2) > div:nth-child(1) > h1 {
+    font-size: 1.75rem;
+}
+
+
+/* 1 */
+
+
+
+/* 2 */
+
+.weather > div:nth-child(7) > div:nth-child(2) > div:nth-child(2) {
+    height: 95px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 15px;
+}   
+
+.weather > div:nth-child(7) > div:nth-child(2) > div:nth-child(2) > div {
+    height: 20px;
+    width: auto;
+    display: flex;
+}
+
+.weather > div:nth-child(7) > div:nth-child(2) > div:nth-child(2) > div img {
+    height: 20px;
+    width: 20px;
+    margin-right: 8px;
+}
+
+.weather > div:nth-child(7) > div:nth-child(2) > div:nth-child(2) > div > p {
+    color: #4335A7;
+    letter-spacing: 0.3px;
+    font-size: 1rem;
+    font-weight: bold;
+   
+}
+
+.weather > div:nth-child(7) > div:nth-child(2) > div:nth-child(2) > h1 {
+    font-size: 1.75rem;
+}
+
+/* 2 */
+
+/* SECOND ROW//////////////////////////////////////////////////////////// */
+
+
+
+/* MORE STATES/////////////////////////////////////////////////////////// */
+

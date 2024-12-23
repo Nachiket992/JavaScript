@@ -1,0 +1,282 @@
+* {
+    font-family: "Roboto", sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --Color-1 : #000000;
+    --Color-2 : #222222;
+    --Color-3 : #6a6a6a;
+    --Color-4 : #b0b0b0;
+    --Color-5 : #ffffff;
+    --Color-6 : #dddddd;
+    --Color-7 : #ff595f;
+}
+
+
+/* NAVBAR//////////////////////////////////////////////////////////////// */
+
+/* SECTION-1///////////////////////////////////////////////////////////// */
+
+.navbarSection1 {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 79.8px;
+}
+
+@media (max-width : 1440px) {
+
+.navbarSection1 {
+    padding-right: 40px;
+    padding-left: 36.4px;
+}
+
+}
+
+@media (max-width : 950px) {
+
+.navbarSection1 {
+    padding-right: 40.5px;
+    padding-left: 36px;
+}
+
+}
+
+
+
+
+/* LOGOS///////////////////////////////////////////////////////////////// */
+
+.navbarSection1 > div:nth-child(1) {
+    height: 58.5px;
+    width: 35.7374719512%;
+    display: flex;
+    align-items: center;
+}
+
+.navbarSection1 > div:nth-child(1) > img:nth-child(1) {
+    display: block;
+}
+    
+.navbarSection1 > div:nth-child(1) > img:nth-child(2) {
+    display: none;
+}
+
+@media (max-width : 1128px) {
+    
+    .navbarSection1 > div:nth-child(1) {
+        height: 40.799px;
+        width: 35.7374719512%;
+    }
+    
+    .navbarSection1 > div:nth-child(1) > img:nth-child(1) {
+        display: none;
+    }
+    
+    .navbarSection1 > div:nth-child(1) > img:nth-child(2) {
+        display: block;
+    }
+    
+}
+
+@media (max-width : 950px) {
+    
+    .navbarSection1 > div:nth-child(1) {
+        height: 40.79px;
+        width: auto;
+    }    
+
+}
+
+/* LOGOS///////////////////////////////////////////////////////////////// */
+
+
+
+/* OPTIONS/////////////////////////////////////////////////////////////// */
+
+.navbarSection1 > div:nth-child(2) {
+    height: 47.6px;
+    width: 380.38px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    padding: 0 24px;
+}
+
+.navbarSection1 > div:nth-child(2) > button:nth-child(1) {
+    height: 100%;
+    width: 72.55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Color-2);
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+}
+
+.navbarSection1 > div:nth-child(2) > button:nth-child(2) {
+    height: 100%;
+    width: 124.19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Color-3);
+    background-color: transparent;
+    font-size: 1rem;
+    letter-spacing: 0.2px;
+    border: none;
+}
+
+@media (max-width : 950px) {
+    
+    .navbarSection1 > div:nth-child(2) > button:nth-child(1) {
+        display: none;
+    }
+
+    .navbarSection1 > div:nth-child(2) > button:nth-child(2) {
+        display: none;
+    }
+
+}
+
+/* OPTIONS/////////////////////////////////////////////////////////////// */
+
+
+
+/* LANGUAGES AND REGIONS///////////////////////////////////////////////// */
+
+.navbarSection1 > div:nth-child(3) {
+    height: 58.5px;
+    width: 35.7374719512%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.navbarSection1 > div:nth-child(3) > h4 {
+    height: 42px;
+    width: 136.3px;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    color: var(--Color-2);
+    letter-spacing: -0.52px;
+    font-size: 0.925rem;
+}
+
+.navbarSection1 > div:nth-child(3) > div:nth-child(2) {
+    height: 42px;
+    width: 46px;
+    display: flex;
+    /* flex-shrink: 0; */
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.navbarSection1 > div:nth-child(3) > div:nth-child(3) {
+    height: 48px;
+    width: 86.5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 8px 8.9px 8px 12.2px;
+    border: 1px solid var(--Color-6);
+    border-radius: 35px;
+}
+
+.navbarSection1 > div:nth-child(3) > div:nth-child(3) > div {
+    height: 29.8px;
+    width: 29.8px;
+    background-color: var(--Color-3);
+    border: 2px solid var(--Color-3);
+    border-radius: 100%;
+}
+
+@media (min-width : 949px) and (max-width : 1006px) {
+    
+    .navbarSection1 > div:nth-child(3) {
+        width: 275.84px;
+        flex-shrink: 0;
+    }
+
+}
+
+@media (max-width : 950px) {
+
+    .navbarSection1 > div:nth-child(3) {
+        width: 52.9310742278%;
+    }
+
+}
+
+/* LANGUAGES AND REGIONS///////////////////////////////////////////////// */
+
+/* SECTION-1///////////////////////////////////////////////////////////// */
+
+
+
+/* SECTION-2///////////////////////////////////////////////////////////// */
+
+.navbarSection2 {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.navbarSection2 > div {
+    height: 44px;
+    width: 180.75px;
+    display: flex;
+}
+
+.navbarSection2 > div > button:nth-child(1) {
+    height: 100%;
+    width: 64.55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Color-2);
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+}
+
+.navbarSection2 > div > button:nth-child(2) {
+    height: 100%;
+    width: 116.19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--Color-3);
+    background-color: transparent;
+    letter-spacing: 0.2px;
+    font-size: 1rem;
+    border: none;
+}
+
+/* SECTION-2///////////////////////////////////////////////////////////// */
+
+
+
+/* SECTION-3///////////////////////////////////////////////////////////// */
+/* SECTION-3///////////////////////////////////////////////////////////// */
+
+/* SECTION-4///////////////////////////////////////////////////////////// */
+/* SECTION-4///////////////////////////////////////////////////////////// */
+
+/* NAVBAR//////////////////////////////////////////////////////////////// */
